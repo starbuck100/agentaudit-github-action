@@ -7,7 +7,7 @@ Scan AI agent packages and MCP tools for security risks using [AgentAudit](https
 ### Scan specific packages
 
 ```yaml
-- uses: agentaudit/security-scan@v1
+- uses: starbuck100/agentaudit-github-action@v1
   with:
     packages: 'cursor,windsurf,claude-code'
     fail-on: 'unsafe'
@@ -16,7 +16,7 @@ Scan AI agent packages and MCP tools for security risks using [AgentAudit](https
 ### Auto-detect from project files
 
 ```yaml
-- uses: agentaudit/security-scan@v1
+- uses: starbuck100/agentaudit-github-action@v1
   with:
     scan-config: 'true'
     fail-on: 'caution'
@@ -36,7 +36,7 @@ jobs:
 
       - name: AgentAudit Security Scan
         id: scan
-        uses: agentaudit/security-scan@v1
+        uses: starbuck100/agentaudit-github-action@v1
         with:
           packages: 'cursor,windsurf'
           scan-config: 'true'
@@ -70,6 +70,13 @@ jobs:
 - ✅ **safe** — No known issues
 - ⚠️ **caution** — Minor concerns, review recommended
 - 🚨 **unsafe** — Significant security risks found
+
+## Related
+
+- 🌐 [AgentAudit Website](https://agentaudit.dev) — Browse the registry
+- 🤖 [AgentAudit MCP Server](https://github.com/starbuck100/agentaudit-mcp-server) — Use from Claude/Cursor/Windsurf
+- 📦 [AgentAudit CLI](https://www.npmjs.com/package/agentaudit) — `npm install -g agentaudit`
+- 🛡️ [AgentAudit Skill](https://clawhub.ai) — `clawhub install agentaudit`
 
 ## License
 

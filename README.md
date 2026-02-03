@@ -1,6 +1,6 @@
 # 🛡️ AgentAudit Security Scan - GitHub Action
 
-Scan AI agent packages and MCP tools for security risks using [AgentAudit](https://www.agentaudit.dev).
+Scan AI agent packages and MCP tools for security risks using [AgentAudit](https://agentaudit.dev).
 
 ## Usage
 
@@ -56,7 +56,7 @@ jobs:
 | `packages` | Comma-separated package slugs to check | `''` |
 | `scan-config` | Auto-detect packages from package.json/requirements.txt | `'false'` |
 | `fail-on` | Risk threshold: `unsafe`, `caution`, or `any` | `'unsafe'` |
-| `api-url` | AgentAudit API URL | `https://www.agentaudit.dev` |
+| `api-url` | AgentAudit API URL | `https://agentaudit.dev` |
 
 ## Outputs
 
@@ -73,7 +73,7 @@ jobs:
 
 ## Related
 
-- 🌐 [AgentAudit Website](https://agentaudit.dev) — Browse the registry
+- 🌐 [AgentAudit Web](https://github.com/starbuck100/agentaudit-web) — The main platform at [agentaudit.dev](https://agentaudit.dev)
 - 🤖 [AgentAudit MCP Server](https://github.com/starbuck100/agentaudit-mcp-server) — Use from Claude/Cursor/Windsurf
 - 📦 [AgentAudit CLI](https://www.npmjs.com/package/agentaudit) — `npm install -g agentaudit`
 - 🛡️ [AgentAudit Skill](https://clawhub.ai) — `clawhub install agentaudit`
